@@ -1,0 +1,413 @@
+:root {
+  --primary-color-branding: #5928ed;
+  --secondary-color-branding: #8c15e9;
+  --terniary-color-branding: #f8f3ff;
+  --quaternary-color-branding: #00d0b7;
+  --main-font:'Inter', sans-serif;
+
+}
+
+body{
+ background-color: var(--terniary-color-branding);
+ font-family: var(--main-font);
+ letter-spacing: 0.5px;
+ line-height: 1.4;
+}
+
+.upperLogo{
+  width: 80px;
+  margin: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+nav{
+display: flex;
+flex-wrap: wrap;
+background-color: var(--secondary-color-branding);
+}
+.globalLinksMenu{
+  display: flex;
+  gap: 30px;
+}
+.linksMenu{
+  color: var(--terniary-color-branding);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+
+ul.globalLinksMenu{
+  list-style: none;
+}
+
+.searchBar{
+  align-self: center;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+input[type=search]{
+width: 200px;
+border-radius: 5px;
+border: none;
+padding: 8px;
+}
+
+.searchBar:focus{
+outline: none;
+}
+
+.btnSearchBar{
+background-color: var(--quaternary-color-branding);
+border: none;
+padding: 9px 10px;
+color: var(--terniary-color-branding);
+font-weight: 600;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.headerTitle{
+text-align: center;
+font-size: 2.7em;
+color: var(--primary-color-branding);
+margin-bottom: auto;
+}
+
+.introductionParagraph{
+  color: black;
+  text-align: center;
+}
+ /*homepage desktop grid*/
+.container-grid{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-gap: 20px;
+}
+
+.mainContainerHome{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 10px; 
+}
+
+.homeProducts{
+  width: 100%;
+  height: auto;
+  min-width: 142px;
+  min-height: 142px;
+  border-radius: 2px;
+}
+
+.item1{
+text-decoration: none;
+color: var(--secondary-color-branding);
+text-align: center;
+}
+
+aside{
+  display: grid;
+  margin-top: 10px;
+  grid-template-rows: 33.3% 33.3% 33.3%;  /*I need 3 */  
+  grid-template-columns:50% 50%;/* I need 2 */
+  box-shadow: rgba(86, 85, 85, 0.24) 0px 3px 8px;
+  grid-gap: 3px;
+  height: 300px;
+}
+.asideHeader{
+  grid-column: 1 / span 2;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-top: 40px;
+  color: var(--primary-color-branding);
+}
+.asideText{
+  color: var(--secondary-color-branding);
+  font-size: 0.8rem;
+   margin-left: 20px;
+   align-self: center;
+}
+.asideTextTwo{
+  color: var(--secondary-color-branding);
+  font-size: 0.8rem;
+  align-self: center;
+}
+.checkout{
+  grid-column: 1 / span 2;
+  border: none;
+  color: var(--terniary-color-branding);
+  font-weight: 800;
+  align-self:first baseline;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: var(--quaternary-color-branding);
+}
+
+
+
+footer{
+ background-color: var(--secondary-color-branding);
+ padding: 20px;
+}
+
+.textFooter{
+color: var(--terniary-color-branding);
+text-align: center;
+}
+
+
+/*products-page*/
+
+.mainContainerProducts{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-gap: 5px; 
+}
+
+.titleHomeProduct{
+  text-align: center;
+  margin-top: 10px;
+  color: var(--secondary-color-branding);
+
+}
+
+a.imageProductPageContainer{
+  text-decoration: none;
+}
+
+.imageProducts{
+  width: 100%;
+  height: auto;
+  min-width: 142px;
+  min-height: 142px;
+  border-radius: 2px;
+  
+}
+
+/*register page*/
+
+
+.mainContainerRegisterPage{
+  margin-top: 10px;
+  margin-left: 50px;
+  display: flex;
+}
+
+
+
+.required{
+  color: red;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.fieldsetRegister{
+  background-color: rgb(193, 154, 247);
+  border: none;
+  width: 600px;
+  margin-bottom: 40px;
+  
+}
+
+
+.registerFormInput{
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  margin: 6px auto;
+}
+
+.registerFormInput:focus{
+  outline: 2px solid var(--secondary-color-branding);
+}
+
+.labelRegisterForm{
+  font-weight: 600;
+}
+.resetBtnRegisterForm{
+  background-color: var(--quaternary-color-branding);
+  margin-top: 10px;
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  color: var(--terniary-color-branding);
+  font-weight: 800;
+}
+.submitRegisterBtn{
+   margin-top: 10px;
+  border: none;
+  padding: 12px 60px;
+  cursor: pointer;
+  background-color: var(--secondary-color-branding);
+  font-weight: 800;
+  color: var(--terniary-color-branding);
+}
+
+/*about us desktop*/
+
+.mainContainerAboutPage{
+  margin-left: 10px;
+}
+
+.introContactParagraph{
+letter-spacing: 0.5px;
+line-height: 1.8;
+margin: 30px;
+
+}
+.goalsTitle{
+  color: var(--secondary-color-branding);
+  font-size: 30px;
+ 
+}
+.listAboutUs{
+color: black;
+list-style-type: square;
+font-size: 1.2rem;
+
+}
+.listGoals{
+  margin-bottom: 35px;
+
+}
+
+.listContactMain{
+ box-shadow: rgba(196, 124, 124, 0.24) 0px 3px 8px;
+}
+
+.contactUsAbout{
+  color: var(--secondary-color-branding);
+  font-size: 1.8rem;
+  
+}
+
+address{
+  margin-bottom: 30px;
+}
+.purple{
+  color:var(--secondary-color-branding);
+}
+
+
+/*contact us*/
+
+.mainContainerContactUs{
+  display: flex;
+  margin-top: 10px;
+}
+
+
+.textarea{
+ width: 306px; height: 171px;
+ border:none;
+  border-radius: 5px;
+}
+
+ .fieldsetContactUs{
+  background-color: rgb(193, 154, 247);
+  border: none;
+  width: 650px;
+  margin-bottom: 50px;
+ }
+.clearForm{
+  background-color: var(--quaternary-color-branding);
+  margin-top: 10px;
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  color: var(--terniary-color-branding);
+  font-weight: 800;
+}
+
+.submitContactForm{
+  margin-top: 10px;
+  border: none;
+  padding: 12px 60px;
+  cursor: pointer;
+  background-color: var(--secondary-color-branding);
+  font-weight: 800;
+  color: var(--terniary-color-branding);
+}
+
+
+
+
+/*responsive menu bar */
+@media only screen and (max-width: 768px) {
+  .navigationBar{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .globalLinksMenu{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+  }
+.linksMenuList{
+  margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.searchBar{
+  margin-left: 50px;
+}
+
+.mainContainerHome {
+  margin-top: 10px;
+  display:grid;
+  grid-template-columns: 1fr;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 20px;
+}
+
+/*about us*/
+.contactUsAbout{
+  font-size: 25px;
+}
+
+
+.goalsTitle{
+  font-size: 25px;
+}
+
+
+/*responsive products page main*/
+
+.mainContainerProducts{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 5px; 
+}
+
+/* responsive register page*/
+
+
+.mainContainerRegisterPage{
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+aside{
+  display: none;
+}
+}
