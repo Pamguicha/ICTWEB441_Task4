@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ICTWEB441_Task4.css">
+  <title>Register Page | 4Phones Australia</title>
+</head>
+
+<body>
+  <header>
+    <img class="upperLogo" src="images/logo4phones.svg" alt="An image of the logo of 4 phones">
+  </header>
+  <nav class="navigationBar">
+    <ul class="globalLinksMenu">
+      <li class="linksMenuList"> <a href="ICTWEB441_Task4_Home.html" class="linksMenu">Home</a></li>
+      <li class="linksMenuList"> <a href="ICTWEB441_Task4_Products.html" class="linksMenu">Products</a></li>
+      <li class="linksMenuList"> <a href="ICTWEB441_Task4_Register.html" class="linksMenu">Register</a></li>
+      <li class="linksMenuList"> <a href="ICTWEB441_Task4_About.html" class="linksMenu">About Us</a></li>
+      <li class="linksMenuList"> <a href="ICTWEB441_Task4_ContactUs.html" class="linksMenu">Contact Us</a></li>
+    </ul>
+    <form role="search" class="searchBar">
+      <input class="searchBarInput" type="search" aria-label="search results box" placeholder="Search brands..."
+        id="search" value="">
+      <input class="btnSearchBar" type="submit" aria-label="submision button" value="Search">
+    </form>
+  </nav>
+  <h1 class="headerTitle">Registration Form</h1>
+  <p class="introductionParagraph"> Please complete the following form to register for an account on our website</p>
+  <div class="container-grid">
+    <main class="mainContainerRegisterPage">
+      <fieldset class="fieldsetRegister" aria-label="register-form">
+        <form class="registerForm" id="register-form">
+          <label for="username" class="labelRegisterForm">Username:</label><br>
+          <input class="registerFormInput" type="text" id="username" name="username" placeholder="Enter your username">
+          <label id="usernameError" class="required"> </label><br>
+          <label for="emailRegisterForm" class="labelRegisterForm">Email address:</label><br>
+          <input class="registerFormInput" id="emailRegisterForm" type="email" placeholder="Enter your Email">
+          <label id="emailRegisterFormError" class="required"> </label><br>
+          <label for="passwordRegisterForm" class="labelRegisterForm" id="password-label">Password</label><br>
+          <input class="registerFormInput" id="passwordRegisterForm" type="password" placeholder="Enter your password">
+          <label id="passwordError" class="required"></label>
+          <br>
+          <label for="password-confirmation" class="labelRegisterForm" id="confirmed-password"> Confirm
+            Password: </label> <br>
+          <input class="registerFormInput" id="password-confirmation" type="password"
+            placeholder="Confirm your password">
+          <label id="confirmPasswordErrorRf" class="required"> </label>
+          <br>
+          <label for="firstNameRegisterForm" class="labelRegisterForm" id="name-label"> First Name:
+          </label> <br>
+          <input class="registerFormInput" id="firstNameRegisterForm" type="text" placeholder="Enter your name"><label
+            id="firstNameErrorRf" class="required"> </label>
+          <br>
+          <label for="surname" class="labelRegisterForm" id="surname-label"> Surname: </label> <br>
+          <input class="registerFormInput" id="surname" type="text" placeholder="Enter your surname"><label
+            id="surnameErrorRf" class="required"> </label>
+          <br>
+
+          <label for="gender" class="labelRegisterForm" id="gender-label"> Gender:</label><label id="genderError"
+            class="required"> </label>
+          <br>
+          <input id="gender" type="radio" value="male" name="gender" title="male" checked> Male
+          <br>
+          <label for="gender-female" class="labelRegisterForm"> <small>(Choose only one)</small> </label>
+          <br>
+          <input id="gender-female" type="radio" value="female" title="female" name="gender">Female
+          <br>
+          <label for="gender-unspecified" class="labelRegisterForm"><small>(Choose only one)</small> </label>
+          <br>
+          <input id="gender-unspecified" title="unspecified" type="radio" value="Unspecified" name="gender"> Unspecified
+          <br>
+          <label for="address" class="labelRegisterForm" id="address-label"> Address:</label> <br>
+          <input class="registerFormInput" id="address" type="text" name="address"
+            placeholder="Enter your address"><label id="addressError" class="required"> </label>
+          <br>
+          <label for="suburb" class="labelRegisterForm" id="suburb-label">Suburb:</label> <br>
+          <input class="registerFormInput" id="suburb" type="text" name="suburb" placeholder="Enter your suburb"><label
+            id="suburbError" class="required"> </label>
+          <br>
+          <label for="postcode" class="labelRegisterForm" id="postcode-label"> Postcode: </label> <br>
+          <input class="registerFormInput" id="postcode" type="text" name="postcode"
+            placeholder="Enter your postcode"><label id="postcodeError" class="required"> </label>
+          <br>
+          <label for="state" class="labelRegisterForm" id="state-label"> State: </label> <br>
+          <input class="registerFormInput" id="state" type="text" name="state" placeholder="Enter your state"><label
+            id="stateError" class="required"> </label>
+          <br>
+          <label for="telephoneRegisterRf" class="labelRegisterForm" id="telephone-labelRf"> Mobile number:</label> <br>
+          <input class="registerFormInput" id="telephoneRegisterRf" type="tel" name="telephone"
+            pattern="[0-4]{2}[0-9]{3} [0-9]{3} [0-9]{2}" placeholder="Enter your mobile number"><label
+            id="telephoneErrorRf" class="required"> </label>
+          <br>
+          <input class="resetBtnRegisterForm" id="resetBtnRf" type="reset" value="Reset"
+            aria-labelledby="register-form">
+          <input class="submitRegisterBtn" id="submitBtnRform" type="submit" value="Submit">
+
+        </form>
+      </fieldset>
+
+    </main>
+    <aside>
+      <h2 class="asideHeader">Purchases</h2>
+      <p class="asideText"> <strong>0</strong> items</p>
+      <p class="asideTextTwo"> Cart sub total:<strong> $0</strong></p>
+      <button class="checkout">GO TO CHECKOUT</button>
+    </aside>
+  </div>
+  <footer>
+    <p class="textFooter"> &copy; 2024 Pamela Mardones </p>
+  </footer>
+</body>
+
+</html>
