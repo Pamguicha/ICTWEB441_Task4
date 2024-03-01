@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ICTWEB441_Task4.css">
+  <title>Contact Us | 4phones Australia</title>
+</head>
+
+<body>
+  <header>
+    <img class="upperLogo" src="images/logo4phones.svg" alt="An image of the logo of 4 phones">
+  </header>
+  <nav class="navigationBar">
+    <ul class="globalLinksMenu">
+      <li class="linksMenuList"> <a href="ICTWEB441_Task4_Home.html" class="linksMenu">Home</a></li>
+      <li class="linksMenuList"> <a href="ICTWEB441_Task4_Products.html" class="linksMenu">Products</a></li>
+      <li class="linksMenuList"> <a href="ICTWEB441_Task4_Register.html" class="linksMenu">Register</a></li>
+      <li class="linksMenuList"> <a href="ICTWEB441_Task4_About.html" class="linksMenu">About Us</a></li>
+      <li class="linksMenuList"> <a href="ICTWEB441_Task4_ContactUs.html" class="linksMenu">Contact Us</a></li>
+    </ul>
+    <form role="search" class="searchBar">
+      <input class="searchBarInput" type="search" aria-label="search results box" placeholder="Search brands..."
+        id="search" value="">
+      <input class="btnSearchBar" type="submit" aria-label="submision button" value="Search">
+    </form>
+  </nav>
+  <h1 class="headerTitle"> Contact Us Form </h1>
+  <p class="introductionParagraph"> Please complete the following form to send your questions/inquiry to us:</p>
+  <div class="container-grid">
+    <main class="mainContainerContactUs">
+      <fieldset class="fieldsetContactUs" aria-label=“contactUs”>
+        <form class="contactForm" id="contact-form">
+          <label for="firstNameContactForm" class="labelRegisterForm" id="contactName-label"> First Name:
+          </label> <br>
+          <input class="registerFormInput" id="firstNameContactForm" type="text" placeholder="Enter your name"><label
+            id="firstNameErrorCf" class="required"> </label> <br>
+          <label for="emailContactForm" class="labelRegisterForm">Email address:</label><br>
+          <input class="registerFormInput" id="emailContactForm" type="email" placeholder="Enter your Email">
+          <label id="emailErrorCf" class="required"> </label> <br>
+          <label for="telephoneContact" class="labelRegisterForm" id="telephone-labelCf"> Phone number:</label> <br>
+          <input class="registerFormInput" id="telephoneContact" type="tel" name="telephone"
+            pattern="[0-4]{2}[0-9]{3} [0-9]{3} [0-9]{2}" placeholder="Enter your mobile number"><label
+            id="telephoneErrorCf" class="required"> </label> <br>
+          <label for="messageContactForm" class="labelRegisterForm">Message:</label>
+          <br>
+          <textarea id="messageContactForm" class="textarea" name="message" rows="10" cols="50"></textarea>
+          <label id="messageError" class="required"> </label>
+          <br>
+          <input class="clearForm" id="clearForm" type="reset" value="Reset" aria-label="reset contact form">
+          <input class="submitContactForm" id="submitContact" type="submit" value="Submit">
+
+
+
+        </form>
+
+      </fieldset>
+    </main>
+    <aside>
+      <h2 class="asideHeader">Purchases</h2>
+      <p class="asideText"> <strong>0</strong> items</p>
+      <p class="asideTextTwo"> Cart sub total:<strong> $0</strong></p>
+      <button class="checkout">GO TO CHECKOUT</button>
+    </aside>
+  </div>
+  <footer>
+    <p class="textFooter"> &copy; 2024 Pamela Mardones </p>
+  </footer>
+</body>
+
+</html>
