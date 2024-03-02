@@ -232,3 +232,22 @@ function validateMobileRf(errorFound){
     }
  };
 
+//function btn register & clear form mouseover and mouseout
+const changeSubmitColor = document.querySelector(".submitRegisterBtn");
+
+changeSubmitColor.addEventListener("mouseover", function(){
+ changeSubmitColor.style.backgroundColor = "#00d0b7";
+});
+
+changeSubmitColor.addEventListener("mouseout", function(){
+  changeSubmitColor.style.backgroundColor = "#8c15e9";
+});
+
+const changeResetRf = document.querySelector("#resetBtnRf");
+changeResetRf.addEventListener("mouseover", function(){
+  changeResetRf.style.backgroundColor = "#8c15e9";
+});
+
+changeResetRf.addEventListener("mouseout", function(){
+  changeResetRf.style.backgroundColor = "#00d0b7";
+});
